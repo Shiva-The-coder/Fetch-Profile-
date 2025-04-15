@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: "Oswald",sans-serif;
+    font-size: 62.5%;
+    
+}
+body{
+    font-size: 1.6rem; 
+    background-color: rgb(255, 255, 196);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.search{
+    display: flex;
+    width: 50%;
+    max-width: 60rem;
+}
+.search input{
+    padding: 0.5rem 1rem;
+    width: 100%;
+}
+.search input:focus-visible{
+   outline: 1px solid purple;
+}
+.primary-btn{
+    background: purple;
+    color: aliceblue;
+    padding: 1rem 0.5rem;
+    border: none;
+}
+.primary-btn:hover{
+    background: rgb(30, 2, 30);  
+}
+.primary-btn:active {
+    background: rgb(211, 163, 211);  
+}
+
+/*For Card*/
+.profileContainer{
+    background-color: red;
+    width: 110%;
+}
+.profile-box{
+    margin: auto;
+    padding: 4rem 2rem;
+    width: 95rem;
+    max-width:100rem ;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    transition: 0.5s ease-in;
+}
+.profile-box:hover{
+    transform: rotate(-2deg)scale(1.01);
+    transition: 0.5s ease-in;
+}
+
+.top-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-section button{
+    align-self: center;
+}
+.left{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.left h1{
+    font-size: 1.6rem;
+}
+.avatar{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+.avatar img{
+    height: 100%;
+    width: 10rem;
+    border-radius: 50%;
+}
+
+.about{
+   margin: 2rem; 
+}
+.status{
+    display: grid;
+    margin: 2rem; 
+    grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+}
+
+.status-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
